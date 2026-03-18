@@ -3,7 +3,7 @@ export const SITE_DATA = {
   name: "Ramen Giant Cijerah",
   rating: "4.3 (1.165 ulasan)",
   priceRange: "Rp 25.000 - Rp 50.000",
-  whatsapp: "6281234567890", // GANTI DENGAN NOMOR WA KLIEN
+  whatsapp: "6285179605683", // GANTI DENGAN NOMOR WA KLIEN
   location: "Melong, Kota Cimahi, Jawa Barat",
   mapLink: "https://maps.app.goo.gl/omrdXU8GvhQUwGTU9",
   hours: "12.00 - 22.00 (Setiap Hari)",
