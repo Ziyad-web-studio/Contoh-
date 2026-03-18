@@ -1,113 +1,137 @@
-export const restaurantData = {
+// data.js
+export const SITE_DATA = {
   name: "Ramen Giant Cijerah",
-  rating: "4.3",
-  reviewsCount: "1.165",
+  rating: "4.3 (1.165 ulasan)",
   priceRange: "Rp 25.000 - Rp 50.000",
+  whatsapp: "6281234567890", // GANTI DENGAN NOMOR WA KLIEN
   location: "Melong, Kota Cimahi, Jawa Barat",
   mapLink: "https://maps.app.goo.gl/omrdXU8GvhQUwGTU9",
-  parkingInfo: "Tersedia area parkir. Jika membawa mobil, lokasi parkir di pinggir jalan, namun petugas parkir kami siap membantu menjaga dan mengatur kendaraan Anda dengan sigap.",
-  whatsappNumber: "6281234567890", // Ganti dengan nomor asli
-  hours: {
-    Senin: "12.00 - 22.00",
-    Selasa: "12.00 - 22.00",
-    Rabu: "12.00 - 22.00",
-    Kamis: "12.00 - 22.00",
-    Jumat: "12.00 - 22.00",
-    Sabtu: "12.00 - 22.00",
-    Minggu: "12.00 - 22.00",
-  },
-  testimonials: [
-    {
-      name: "hanii pahh",
-      rating: 5,
-      review: "Tempatnya nyaman, bersih, luas, ada 2 lantai , Aku kemarin beli yang varian Niku Soboro ramen, Gyu panko ramen & kids tory drum. Rasa enak gurih, gak hambar"
-    },
-    {
-      name: "Mergie Decillita",
-      rating: 5,
-      review: "Anak anak sangat suka Rame nya mana tambah es teh nya dengan gelas jumbo lagi nambah betah dan berlama lama menikmati makanan disini,, sekarang ada rooftop nya jadi bisa makan sambil menikmati sensasi angin segar dan lampu lampu disekitarnya lokasi.. ramenya pakai motor karena parkiran mobilnya pinggir jalan agak riskan juga,, tapi mang parkirnya dengan semangat bisa bantuin jaga dan mengatur saat kita mau pulang.."
-    },
-    {
-      name: "redi sulaeman",
-      rating: 5,
-      review: "Pertama kali nyoba ramen disini, tempatnya lumayan strategis.. Harganya terjangkau, tapi rasanya gak kalah dibanding ramen di mall mewah di bandung, varian ramen nya banyak dengan toping yang variatif, dan tentunya enak banget.."
-    },
-    {
-      name: "Yuma",
-      rating: 5,
-      review: "Ramen Giant Cijerah adalah pilihan yang tepat buat kamu yang cari ramen enak, porsi besar, dan harga terjangkau di area Cijerah. Rasanya cenderung cocok untuk lidah lokal dengan variasi kuah dan level pedas yang bisa disesuaikan."
-    },
-    {
-      name: "Syarianty Rengganis",
-      rating: 5,
-      review: "tempatnya luas,, rasanya work it dengan harganya,,lumayan banyak pilihan ramen dan topingnya"
-    }
-  ],
-  menu: {
-    "Reguler Ramen": [
-      "Tofu Ramen", "Ekado Ramen", "Tentakel Ramen", "Chicken Furai Ramen",
-      "Pangsit Nori Ramen", "Chicken Finger Ramen", "Fishroll Ramen", "Okina Dumpling Ramen",
-      "Wonton Ramen", "Enokitake Ramen", "Beef Enoki Ramen", "Chicken Lolipop Ramen",
-      "Nivaton Ramen", "Plankia Ramen", "Mr Cepen Ramen", "Karage Ramen",
-      "Calamary Ramen", "Bratwurst Ramen", "Beef Ramen"
+  hours: "12.00 - 22.00 (Setiap Hari)",
+  seo: ["Ramen Cimahi", "Ramen Halal", "Rooftop Cimahi", "Ramen Murah"]
+};
+
+export const MENU = {
+  id: {
+    categories: [
+      { id: 'reguler', label: 'Reguler Ramen' },
+      { id: 'bigger', label: 'Bigger' },
+      { id: 'kids', label: 'Kids Menu' },
+      { id: 'dessert', label: 'Dessert' }
     ],
-    "Bigger": [
-      "Tempura Ramen", "Sea World Ramen", "Kompilasi Ramen", "Karnivor Ramen"
-    ],
-    "Special Yamien": [
-      "Yamien Seoul", "Yamien Beef", "Yamien Katsu", "Yamien Bratwurst"
-    ],
-    "Kids Menu": [
-      "Kids Ramen 1", "Kids Ramen 2", "Kids Ramen 3", "Kids Ramen 4", "Kids Ramen 5",
-      "Kids Udon 1", "Kids Udon 2", "Kids Udon 3", "Kids Udon 4", "Kids Udon 5"
-    ],
-    "Rice Extra": [
-      "Tebasaki Rice", "Rice Chicken Katsu", "Karage Rice", "Rice Katsu Cheese"
-    ],
-    "Dessert": [
-      "Youghurt Lechy", "Youghurt Blueberry", "Youghurt Manggo", "Youghurt Strawberry", "Ice Durian Creamary"
-    ],
-    "Others": [
-      "Lemon Squash", "Mineral Water", "Hot Tea", "Hot Lemon Tea", "Ocha", "Marquisa Sunshine",
-      "Ice Tea", "Ice Lemon Tea", "Ice Tea Lechy", "Lime Florida", "Jungle Manggo", "Orenji",
-      "Hawaii Granadine", "Manggo Lazzy", "Blue Ocean", "Red Noir Ice Cream", "Milo Shake Aisu",
-      "Almond Crush", "Snow Oreo", "Gula Asem", "Thai Tea", "Green Tea Coffee", "Tea Tarik",
-      "Choco Milk", "Mocca Loca", "Taro Latte", "Matcha Green Tea", "Candy Manggo", "Lechy Fizz",
-      "Blue Deep", "Lechy Blazz", "Lime Blazz"
+    items: [
+      { id: 1, cat: 'reguler', name: 'Beef Enoki Ramen', price: '35rb', img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=800' },
+      { id: 2, cat: 'dessert', name: 'Ice Durian Creamary', price: '18rb', img: 'https://images.unsplash.com/photo-1505394033343-430c7b132e31?auto=format&fit=crop&q=80&w=800' },
+      { id: 3, cat: 'bigger', name: 'Karnivor Ramen', price: '45rb', img: 'https://images.unsplash.com/photo-1591814448473-b46764b8448d?auto=format&fit=crop&q=80&w=800' }
     ]
   },
-  images: {
-    hero: "https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=1964&auto=format&fit=crop", // Rooftop/restaurant vibe
-    ramen: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=2080&auto=format&fit=crop",
-    udon: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=2070&auto=format&fit=crop",
-    dessert: "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1964&auto=format&fit=crop"
+  en: {
+    categories: [
+      { id: 'reguler', label: 'Regular Ramen' },
+      { id: 'bigger', label: 'Jumbo Size' },
+      { id: 'kids', label: 'Kids Meal' },
+      { id: 'dessert', label: 'Sweets' }
+    ]
   }
 };
 
-// Arsitektur data multi-bahasa (i18next-ready)
-export const translations = {
-  id: {
-    translation: {
-      welcome: "Selamat Datang di",
-      subtitle: "Ramen Halal Terdekat dengan Sensasi Rooftop di Cimahi",
-      orderNow: "Pesan Sekarang",
-      menu: "Menu Kami",
-      location: "Lokasi & Parkir",
-      testimonials: "Kata Mereka",
-      parkingNote: "Catatan Parkir",
-      footerQuestion: "Tanya info lokasi dong"
-    }
-  },
-  en: {
-    translation: {
-      welcome: "Welcome to",
-      subtitle: "The Nearest Halal Ramen with Rooftop Sensation in Cimahi",
-      orderNow: "Order Now",
-      menu: "Our Menu",
-      location: "Location & Parking",
-      testimonials: "Testimonials",
-      parkingNote: "Parking Note",
-      footerQuestion: "Can I get more info about the location?"
-    }
-  }
+// App.jsx
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const App = () => {
+  const [activeTab, setActiveTab] = useState('reguler');
+  const [isDark, setIsDark] = useState(false);
+  const [lang, setLang] = useState('id');
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) setIsDark(true);
+  }, []);
+
+  const getWaLink = (type, itemName = "") => {
+    const text = type === 'order' 
+      ? `Halo RGC, saya mau pesan ${itemName}...` 
+      : `Halo RGC, boleh tanya lokasi tepatnya?`;
+    return `https://wa.me/${SITE_DATA.whatsapp}?text=${encodeURIComponent(text)}`;
+  };
+
+  return (
+    <div className={isDark ? 'dark' : ''}>
+      <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white transition-all">
+        
+        {/* NAV & HERO */}
+        <header className="fixed top-0 w-full z-50 bg-red-600 dark:bg-red-900 p-4 flex justify-between items-center shadow-lg">
+          <h1 className="font-black text-white uppercase tracking-tighter">RGC Cijerah</h1>
+          <div className="flex gap-2">
+            <button onClick={() => setLang(lang === 'id' ? 'en' : 'id')} className="bg-white/20 px-2 py-1 rounded text-xs text-white">
+              {lang === 'id' ? '🇮🇩' : '🇺🇸'}
+            </button>
+            <button onClick={() => setIsDark(!isDark)} className="p-2 bg-yellow-400 rounded-full">{isDark ? '☀️' : '🌙'}</button>
+          </div>
+        </header>
+
+        <section className="pt-24 pb-12 px-6 text-center bg-slate-50 dark:bg-slate-800">
+          <motion.h2 initial={{y:20, opacity:0}} animate={{y:0, opacity:1}} className="text-4xl font-extrabold text-red-600 mb-2">
+            {lang === 'id' ? 'Selamat Datang di Ramen Giant Cijerah' : 'Welcome to Ramen Giant Cijerah'}
+          </motion.h2>
+          <p className="text-lg italic opacity-80">"Ramen Halal Terdekat dengan Sensasi Rooftop di Cimahi"</p>
+          <div className="mt-4 flex justify-center items-center gap-1 text-yellow-500">
+            <span>⭐⭐⭐⭐★</span> <span className="text-slate-400 text-sm">{SITE_DATA.rating}</span>
+          </div>
+        </section>
+
+        {/* TABBING MENU */}
+        <section className="py-12 px-4 container mx-auto">
+          <div className="flex overflow-x-auto gap-2 mb-8 justify-center no-scrollbar">
+            {MENU[lang].categories.map(cat => (
+              <button 
+                key={cat.id} 
+                onClick={() => setActiveTab(cat.id)}
+                className={`px-6 py-2 rounded-full font-bold whitespace-nowrap transition-all ${activeTab === cat.id ? 'bg-red-600 text-white shadow-md scale-105' : 'bg-slate-200 dark:bg-slate-700'}`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+
+          <motion.div layout className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <AnimatePresence mode="wait">
+              {MENU.id.items.filter(i => i.cat === activeTab).map(item => (
+                <motion.div 
+                  key={item.id} layout initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}
+                  className="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-xl border dark:border-slate-700"
+                >
+                  <img src={item.img} className="h-48 w-full object-cover" alt={item.name} />
+                  <div className="p-5 flex justify-between items-center">
+                    <div>
+                      <h4 className="font-bold text-lg">{item.name}</h4>
+                      <p className="text-red-600 font-black">{item.price}</p>
+                    </div>
+                    <a href={getWaLink('order', item.name)} className="bg-green-500 p-3 rounded-full text-white">📞</a>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </section>
+
+        {/* LOKASI & PARKIR */}
+        <footer className="bg-slate-100 dark:bg-slate-900 p-8 border-t dark:border-slate-800">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold text-red-600 mb-4">Lokasi & Parkir</h3>
+              <p className="text-sm mb-4">{SITE_DATA.location}</p>
+              <div className="bg-yellow-100 dark:bg-yellow-900/30 p-4 rounded-xl text-xs leading-relaxed border-l-4 border-yellow-500">
+                <strong>Catatan Parkir:</strong> Tersedia area parkir. Jika membawa mobil, petugas parkir kami yang semangat siap membantu menjaga dan mengatur kendaraan Anda agar aman.
+              </div>
+            </div>
+            <div className="bg-slate-300 dark:bg-slate-700 rounded-2xl h-48 flex items-center justify-center">
+              <a href={SITE_DATA.mapLink} className="bg-red-600 text-white px-6 py-2 rounded-full font-bold">Buka Google Maps</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  );
 };
+
+export default App;
