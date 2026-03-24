@@ -1,0 +1,2023 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                body {
+                  background-color: white; /* Ensure the iframe has a white background */
+                }
+
+                .cta-description {
+    font-size: 12px;
+    color: #6B7280;
+    text-align: center;
+    margin-top: 8px;
+    display: block;
+}
+
+
+              </style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Giant Cijerah - Restoran Ramen Terbaik di Cimahi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@4.5.15/index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary-red: #DC2626;
+            --primary-orange: #EA580C;
+            --secondary-brown: #78350F;
+            --accent-gold: #F59E0B;
+            --bg-cream: #FEF3E2;
+        }
+        
+        body {
+            background-color: var(--bg-cream);
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, var(--secondary-brown) 0%, var(--primary-red) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://image.qwenlm.ai/public_source/6b3ebb31-06bb-4ac5-87c4-f054d417c220/16c953808-a2e9-4740-8488-dc7791596c4c.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .menu-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .menu-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-orange);
+            box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+        }
+        
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .star-rating {
+            color: var(--accent-gold);
+        }
+        
+        .star-rating-white {
+            color: #FFFFFF;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(220, 38, 38, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-gofood {
+            background: linear-gradient(135deg, #00AA13 0%, #00880F 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gofood:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 170, 19, 0.4);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-orange);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(20px) scale(0.8);
+            transition: all 0.5s ease;
+            pointer-events: none;
+        }
+        
+        .floating-btn.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: all;
+        }
+        
+        .floating-btn.animate {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .rating-badge {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #FBBF24 100%);
+        }
+        
+        .hours-card {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(234, 88, 12, 0.1) 100%);
+        }
+        
+        /* Menu Tab Styles */
+        .menu-tab {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .menu-tab.active {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 100%);
+            color: white;
+            border-color: var(--primary-orange);
+            transform: scale(1.05);
+        }
+        
+        .menu-tab:hover:not(.active) {
+            border-color: var(--primary-orange);
+            color: var(--primary-orange);
+        }
+        
+        .menu-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .menu-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateX(10px);
+            color: var(--primary-orange);
+        }
+        
+        /* Best Seller Badge - Enhanced */
+        .best-seller-badge {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+            animation: glow 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .best-seller-badge::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+        
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 5px rgba(245, 158, 11, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(245, 158, 11, 0.8);
+            }
+        }
+        
+        /* Urgency Notification - Fixed Position */
+        .urgency-notification {
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 35;
+            animation: slideDown 0.5s ease;
+            max-width: 90%;
+            width: 400px;
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateX(-50%) translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .urgency-notification.hidden {
+            display: none;
+        }
+        
+        /* Booking Form */
+        .booking-form {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.05) 0%, rgba(234, 88, 12, 0.05) 100%);
+        }
+        
+        .form-input {
+            transition: all 0.3s ease;
+            border: 2px solid #E5E7EB;
+        }
+        
+        .form-input:focus {
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+            outline: none;
+        }
+        
+        .form-input.error {
+            border-color: #DC2626;
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+        }
+        
+        .error-message {
+            color: #DC2626;
+            font-size: 12px;
+            margin-top: 4px;
+            display: none;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        /* Floating CTA Upgrade */
+        .floating-cta-text {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary-orange);
+            white-space: nowrap;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        /* Why Choose Us Cards */
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(234, 88, 12, 0.2);
+        }
+        
+        /* Clock Animation */
+        .clock-pulse {
+            animation: clockPulse 2s infinite;
+        }
+        
+        @keyframes clockPulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Close Button */
+        .close-notification {
+            transition: all 0.3s ease;
+        }
+        
+        .close-notification:hover {
+            transform: scale(1.2);
+            background: rgba(255,255,255,0.3);
+        }
+        
+        /* Loading Modal */
+        .loading-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 3000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loading-modal.active {
+            display: flex;
+        }
+        
+        .loading-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #E5E7EB;
+            border-top: 4px solid var(--primary-orange);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Social Proof Notification */
+        .social-proof {
+            position: fixed;
+            bottom: 100px;
+            left: 30px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            z-index: 999;
+            transform: translateX(-150%);
+            transition: transform 0.5s ease;
+            max-width: 300px;
+        }
+        
+        .social-proof.show {
+            transform: translateX(0);
+        }
+        
+        /* Countdown Timer */
+        .countdown-badge {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 100%);
+            animation: countdownPulse 1s infinite;
+        }
+        
+        @keyframes countdownPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Enhanced Best Seller */
+        .best-seller-highlight {
+            transform: scale(1.02);
+            border: 2px solid var(--accent-gold);
+            position: relative;
+        }
+        
+        .best-seller-highlight::after {
+            content: '🔥';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 24px;
+            animation: bounce 1s infinite;
+        }
+        
+        /* Peak Hour Highlight */
+        .peak-hour {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 100%);
+            color: white !important;
+        }
+        
+        /* Button Loading State */
+        .btn-loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+        
+        .btn-loading .btn-text {
+            display: none;
+        }
+        
+        .btn-loading .btn-spinner {
+            display: inline-block;
+        }
+        
+        .btn-spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ffffff;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        /* CTA Description Text */
+        .cta-description {
+            font-size: 12px;
+            color: #6B7280;
+            text-align: center;
+            margin-top: 8px;
+            display: block;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-40">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="https://image.qwenlm.ai/public_source/6b3ebb31-06bb-4ac5-87c4-f054d417c220/153133813-f8db-4643-bcf7-13c1f92d0ba9.png" alt="Logo" class="h-12 w-12 object-contain">
+                    <div>
+                        <h1 class="text-xl font-bold text-gradient">Ramen Giant Cijerah</h1>
+                        <p class="text-xs text-gray-500">Restoran Ramen Terbaik</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Beranda</a>
+                    <a href="#features" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Keunggulan</a>
+                    <a href="#menu" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Menu</a>
+                    <a href="#booking" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Reservasi</a>
+                    <a href="#reviews" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Ulasan</a>
+                    <a href="#location" class="nav-link text-gray-700 hover:text-orange-600 font-medium">Lokasi</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-orange-600">Beranda</a>
+                <a href="#features" class="block py-2 text-gray-700 hover:text-orange-600">Keunggulan</a>
+                <a href="#menu" class="block py-2 text-gray-700 hover:text-orange-600">Menu</a>
+                <a href="#booking" class="block py-2 text-gray-700 hover:text-orange-600">Reservasi</a>
+                <a href="#reviews" class="block py-2 text-gray-700 hover:text-orange-600">Ulasan</a>
+                <a href="#location" class="block py-2 text-gray-700 hover:text-orange-600">Lokasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Urgency Notification - Dynamic FOMO -->
+    <div id="urgencyNotification" class="urgency-notification">
+        <div class="gradient-primary text-white py-3 px-4 rounded-full shadow-lg flex items-center justify-between">
+            <div class="flex items-center space-x-2 flex-1">
+                <i class="fas fa-clock clock-pulse"></i>
+                <span class="font-semibold text-sm" id="urgencyText">⚠️ Jam 19:00–21:00 hampir penuh!</span>
+            </div>
+            <button onclick="closeUrgencyNotification()" class="close-notification w-8 h-8 rounded-full flex items-center justify-center ml-2 flex-shrink-0">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Social Proof Notification -->
+    <div id="socialProof" class="social-proof">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 gradient-primary rounded-full flex items-center justify-center">
+                <i class="fas fa-user text-white text-sm"></i>
+            </div>
+            <div>
+                <p class="text-sm font-semibold text-gray-800" id="socialProofText">User baru saja melakukan reservasi!</p>
+                <p class="text-xs text-gray-500" id="socialProofTime">Baru saja</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <div class="fade-in">
+                <div class="rating-badge inline-block px-6 py-3 rounded-full mb-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="star-rating star-rating-white text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="font-bold text-gray-800 text-lg">4.3</span>
+                        <span class="text-gray-700">(1,165 Ulasan)</span>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Ramen Giant Cijerah</h1>
+                <p class="text-xl md:text-2xl mb-4 text-gray-200">Restoran Ramen Terbaik di Cimahi</p>
+                <p class="text-lg mb-8 text-gray-300">Harga Terjangkau Rp. 25.000 - 50.000</p>
+                
+                <!-- Dynamic Urgency Badge -->
+                <div class="countdown-badge inline-block px-6 py-3 rounded-full mb-8" id="countdownBadge">
+                    <i class="fas fa-fire mr-2"></i>
+                    <span class="font-semibold" id="countdownText">🔥 3 meja tersisa malam ini</span>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+                    <!-- UPDATED WHATSAPP CTA -->
+                    <div class="text-center">
+                        <a href="https://wa.me/6289674529309" class="btn-whatsapp px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>📅 Reservasi via WhatsApp</span>
+                        </a>
+                        <span class="cta-description">Untuk booking meja & makan di tempat</span>
+                    </div>
+                    <!-- UPDATED GOFOOD CTA -->
+                    <div class="text-center">
+                        <a href="https://gofood.co.id" class="btn-gofood px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>🛵 Pesan Delivery via GoFood</span>
+                        </a>
+                        <span class="cta-description">Untuk pesan antar tanpa antri</span>
+                    </div>
+                </div>
+                
+                <!-- Google Maps Button - UPDATED LINK -->
+                <a href="https://maps.app.goo.gl/kozCZkZ7Tq6kUqWV7" target="_blank" class="btn-primary px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2 mb-8">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lihat Lokasi di Google Maps</span>
+                </a>
+                
+                <!-- CTA to Booking -->
+                <div class="mt-12">
+                    <a href="#booking" class="inline-block animate-bounce bg-white bg-opacity-20 px-8 py-4 rounded-full font-semibold hover:bg-opacity-30 transition">
+                        <i class="fas fa-calendar-check mr-2"></i>Reservasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Kenapa Pilih Kami?</h2>
+                <p class="text-gray-600 text-lg">Alasan kenapa Ramen Giant Cijerah jadi favorit banyak orang</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card bg-orange-50 rounded-2xl shadow-lg p-8 text-center fade-in">
+                    <div class="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-utensils text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Porsi Besar</h3>
+                    <p class="text-gray-600">Puas makan dengan porsi yang mengenyangkan untuk semua kalangan</p>
+                </div>
+                
+                <div class="feature-card bg-orange-50 rounded-2xl shadow-lg p-8 text-center fade-in">
+                    <div class="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-wallet text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Harga Terjangkau</h3>
+                    <p class="text-gray-600">Rp 25.000 - 50.000 saja sudah bisa menikmati ramen enak</p>
+                </div>
+                
+                <div class="feature-card bg-orange-50 rounded-2xl shadow-lg p-8 text-center fade-in">
+                    <div class="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-couch text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tempat Nyaman</h3>
+                    <p class="text-gray-600">2 Lantai + Rooftop dengan suasana yang cozy dan Instagramable</p>
+                </div>
+                
+                <div class="feature-card bg-orange-50 rounded-2xl shadow-lg p-8 text-center fade-in">
+                    <div class="w-20 h-20 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Terpercaya</h3>
+                    <p class="text-gray-600">Rating 4.3 dari 1,165+ ulasan pelanggan puas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gradient-to-b from-orange-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <img src="https://image.qwenlm.ai/public_source/6b3ebb31-06bb-4ac5-87c4-f054d417c220/1ba4d6a7d-fa6c-4e1f-820e-7e637b07473e.png" alt="Ramen Bowl" class="rounded-2xl shadow-2xl w-full">
+                </div>
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold mb-6 text-gradient">Tentang Kami</h2>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Ramen Giant Cijerah adalah pilihan yang tepat buat kamu yang cari ramen enak, porsi besar, dan harga terjangkau di area Cijerah. Rasanya cenderung cocok untuk lidah lokal dengan variasi kuah dan level pedas yang bisa disesuaikan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                            <i class="fas fa-utensils text-4xl text-orange-600 mb-3"></i>
+                            <h3 class="font-bold text-lg">Menu Beragam</h3>
+                            <p class="text-gray-600">50+ Pilihan Menu</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                            <i class="fas fa-users text-4xl text-orange-600 mb-3"></i>
+                            <h3 class="font-bold text-lg">Tempat Nyaman</h3>
+                            <p class="text-gray-600">2 Lantai + Rooftop</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                            <i class="fas fa-wallet text-4xl text-orange-600 mb-3"></i>
+                            <h3 class="font-bold text-lg">Harga Terjangkau</h3>
+                            <p class="text-gray-600">Rp 25-50rb</p>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-xl shadow-md">
+                            <i class="fas fa-clock text-4xl text-orange-600 mb-3"></i>
+                            <h3 class="font-bold text-lg">Buka Setiap Hari</h3>
+                            <p class="text-gray-600">12.00 - 22.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Reservasi Tempat</h2>
+                <p class="text-gray-600 text-lg">Booking sekarang, langsung terhubung ke WhatsApp</p>
+                <div class="bg-orange-100 inline-block px-6 py-3 rounded-full mt-4">
+                    <i class="fas fa-info-circle text-orange-600 mr-2"></i>
+                    <span class="text-orange-800 font-semibold">Jam 19:00–21:00 biasanya full. Reservasi dulu biar gak nunggu!</span>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="booking-form rounded-2xl shadow-xl p-8 fade-in">
+                    <form id="bookingForm" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-user text-orange-600 mr-2"></i>Nama Lengkap *
+                            </label>
+                            <input type="text" id="bookingName" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Masukkan nama Anda" required>
+                            <p class="error-message" id="nameError">Nama harus diisi minimal 3 karakter</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    <i class="fas fa-calendar text-orange-600 mr-2"></i>Tanggal *
+                                </label>
+                                <input type="date" id="bookingDate" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                <p class="error-message" id="dateError">Tanggal tidak boleh sebelum hari ini</p>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    <i class="fas fa-clock text-orange-600 mr-2"></i>Jam *
+                                </label>
+                                <select id="bookingTime" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                    <option value="">Pilih jam</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00" class="peak-hour">19:00 🔥 Ramai</option>
+                                    <option value="20:00" class="peak-hour">20:00 🔥 Ramai</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                                <p class="error-message" id="timeError">Jam operasional 12:00 - 22:00</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-users text-orange-600 mr-2"></i>Jumlah Orang *
+                            </label>
+                            <select id="bookingPeople" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                <option value="">Pilih jumlah</option>
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5">5 Orang</option>
+                                <option value="6">6 Orang</option>
+                                <option value="7+">7+ Orang (Hubungi kami)</option>
+                            </select>
+                            <p class="error-message" id="peopleError">Pilih jumlah orang</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="text-blue-800 text-sm">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <strong>Konfirmasi instan!</strong> Data reservasi akan langsung terkirim ke WhatsApp kami
+                            </p>
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="btn-whatsapp w-full px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2">
+                            <span class="btn-text"><i class="fab fa-whatsapp"></i> Kirim Reservasi via WhatsApp</span>
+                            <span class="btn-spinner"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section with Tabs -->
+    <section id="menu" class="py-20 bg-gradient-to-b from-orange-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Menu Kami</h2>
+                <p class="text-gray-600 text-lg">Pilihan menu terlengkap untuk semua selera</p>
+            </div>
+
+            <!-- Menu Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 fade-in">
+                <button class="menu-tab active px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="ramen">
+                    <i class="fas fa-bowl-food mr-2"></i>Ramen
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="kids">
+                    <i class="fas fa-child mr-2"></i>Kids
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="rice">
+                    <i class="fas fa-utensils mr-2"></i>Rice
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="bigger">
+                    <i class="fas fa-drumstick-bite mr-2"></i>Bigger
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="yamien">
+                    <i class="fas fa-star mr-2"></i>Yamien
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="drinks">
+                    <i class="fas fa-glass-cheers mr-2"></i>Minuman
+                </button>
+                <button class="menu-tab px-6 py-3 rounded-full font-semibold border-2 border-orange-500" data-category="dessert">
+                    <i class="fas fa-ice-cream mr-2"></i>Dessert
+                </button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="max-w-4xl mx-auto">
+                <!-- Ramen Category -->
+                <div id="ramen" class="menu-content active bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-bowl-food text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Reguler Ramen</h3>
+                            <p class="text-gray-500 text-sm">Pilihan ramen terbaik untuk Anda</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-xs text-orange-500"></i>
+                                <span class="font-medium">Karage Ramen</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">🔥 Paling Laris</span>
+                        </div>
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-xs text-orange-500"></i>
+                                <span class="font-medium">Beef Ramen</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐ Best Seller</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Tofu Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ekado Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Tentakel Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Chicken Furai Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Pangsit Nori Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Chicken Finger Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Fishroll Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Okina Dumpling Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Wonton Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Enokitake Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Beef Enoki Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Chicken Lolipop Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Nivaton Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Plankia Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Mr Cepen Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Calamary Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Bratwurst Ramen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Category -->
+                <div id="kids" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-child text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Kids Menu</h3>
+                            <p class="text-gray-500 text-sm">Menu spesial untuk si kecil</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4 text-orange-600"><i class="fas fa-bowl-food mr-2"></i>Kids Ramen</h4>
+                            <div class="space-y-2">
+                                <div class="menu-item flex items-center justify-between p-3 bg-orange-50 rounded-lg best-seller-badge">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-circle text-xs text-orange-500"></i>
+                                        <span class="font-medium">Kids Ramen 1</span>
+                                    </div>
+                                    <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐ Favorit</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Ramen 2</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Ramen 3</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Ramen 4</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Ramen 5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-4 text-orange-600"><i class="fas fa-utensils mr-2"></i>Kids Udon</h4>
+                            <div class="space-y-2">
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Udon 1</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Udon 2</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Udon 3</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Udon 4</span>
+                                </div>
+                                <div class="menu-item flex items-center space-x-3 p-3 bg-orange-50 rounded-lg">
+                                    <i class="fas fa-circle text-xs text-orange-500"></i>
+                                    <span class="font-medium">Kids Udon 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rice Category -->
+                <div id="rice" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-utensils text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Rice & Extra</h3>
+                            <p class="text-gray-500 text-sm">Menu nasi dan tambahan</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-orange-500"></i>
+                                <span class="font-medium text-lg">Rice Chicken Katsu</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">🔥 Laris</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Tebasaki Rice</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Karage Rice</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Rice Katsu Cheese</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bigger Category -->
+                <div id="bigger" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-drumstick-bite text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Bigger</h3>
+                            <p class="text-gray-500 text-sm">Porsi lebih besar untuk lapar ekstra</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-orange-500"></i>
+                                <span class="font-medium text-lg">Tempura Ramen</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐ Best Seller</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Sea World Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Kompilasi Ramen</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Karnivor Ramen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yamien Category -->
+                <div id="yamien" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-star text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Special Yamien</h3>
+                            <p class="text-gray-500 text-sm">Menu spesial mie goreng</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-orange-500"></i>
+                                <span class="font-medium text-lg">Yamien Seoul</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐ Best Seller</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Yamien Beef</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Yamien Katsu</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Yamien Bratwurst</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Category -->
+                <div id="drinks" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-glass-cheers text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Minuman</h3>
+                            <p class="text-gray-500 text-sm">Berbagai pilihan minuman segar</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-3">
+                        <div class="menu-item flex items-center justify-between p-3 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-circle text-xs text-orange-500"></i>
+                                <span class="font-medium">Thai Tea</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">🔥</span>
+                        </div>
+                        <div class="menu-item flex items-center justify-between p-3 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-circle text-xs text-orange-500"></i>
+                                <span class="font-medium">Milo Shake Aisu</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Lemon Squash</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Mineral Water</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Hot Tea</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Hot Lemon Tea</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ocha</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Marquisa Sunshine</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ice Tea</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ice Lemon Tea</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ice Tea Lechy</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Lime Florida</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Jungle Manggo</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Orenji</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Hawaii Granadine</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Manggo Lazzy</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Blue Ocean</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Red Noir</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Ice Cream</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Almond Crush</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Snow Oreo</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Gula Asem</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Green Tea Coffee</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Tea Tarik</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Choco Milk</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Mocca Loca</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Taro Latte</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Matcha Green Tea</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Candy Manggo</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Lechy Fizz</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Blue Deep</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Lechy Blazz</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-2 p-3 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-xs text-orange-500"></i>
+                            <span class="font-medium">Lime Blazz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dessert Category -->
+                <div id="dessert" class="menu-content bg-white rounded-2xl shadow-xl p-8 fade-in">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-ice-cream text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Dessert</h3>
+                            <p class="text-gray-500 text-sm">Penutup manis untuk melengkapi makanan Anda</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-orange-500"></i>
+                                <span class="font-medium text-lg">Youghurt Lechy</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">⭐ Best Seller</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Youghurt Blueberry</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Youghurt Manggo</span>
+                        </div>
+                        <div class="menu-item flex items-center space-x-3 p-4 bg-orange-50 rounded-lg">
+                            <i class="fas fa-circle text-orange-500"></i>
+                            <span class="font-medium text-lg">Youghurt Strawberry</span>
+                        </div>
+                        <div class="menu-item flex items-center justify-between p-4 bg-orange-50 rounded-lg best-seller-badge best-seller-highlight">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-circle text-orange-500"></i>
+                                <span class="font-medium text-lg">Ice Durian Creamary</span>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2 py-1 rounded">🔥 Unik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Ulasan Pelanggan</h2>
+                <p class="text-gray-600 text-lg">Apa kata mereka tentang Ramen Giant Cijerah</p>
+                <div class="flex items-center justify-center space-x-4 mt-6">
+                    <div class="star-rating text-3xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-2xl font-bold">4.3</span>
+                    <span class="text-gray-500">(1,165 Ulasan)</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="review-card bg-orange-50 rounded-2xl shadow-lg p-6 fade-in">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white font-bold">
+                            HP
+                        </div>
+                        <div>
+                            <h4 class="font-bold">hanii pahh</h4>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Tempatnya nyaman, bersih, luas, ada 2 lantai, Aku kemarin beli yang varian Niku Soboro ramen, Gyu panko ramen & kids tory drum. Rasa enak gurih, gak hambar"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card bg-orange-50 rounded-2xl shadow-lg p-6 fade-in">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white font-bold">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mergie Decillita</h4>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Anak anak sangat suka Rame nya mana tambah es teh nya dengan gelas jumbo lagi nambah betah dan berlama lama menikmati makanan disini, sekarang ada rooftop nya jadi bisa makan sambil menikmati sensasi angin segar dan lampu lampu disekitarnya lokasi.."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card bg-orange-50 rounded-2xl shadow-lg p-6 fade-in">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white font-bold">
+                            RS
+                        </div>
+                        <div>
+                            <h4 class="font-bold">redi sulaeman</h4>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Pertama kali nyoba ramen disini, tempatnya lumayan strategis. Harganya terjangkau, tapi rasanya gak kalah dibanding ramen di mall mewah di bandung, varian ramen nya banyak dengan toping yang variatif, dan tentunya enak banget.."</p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card bg-orange-50 rounded-2xl shadow-lg p-6 fade-in">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white font-bold">
+                            Y
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Yuma</h4>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Ramen Giant Cijerah adalah pilihan yang tepat buat kamu yang cari ramen enak, porsi besar, dan harga terjangkau di area Cijerah. Rasanya cenderung cocok untuk lidah lokal dengan variasi kuah dan level pedas yang bisa disesuaikan."</p>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-card bg-orange-50 rounded-2xl shadow-lg p-6 fade-in">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center text-white font-bold">
+                            SR
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Syarianty Rengganis</h4>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"tempatnya luas, rasanya work it dengan harganya, lumayan banyak pilihan ramen dan topingnya"</p>
+                </div>
+
+                <!-- Rooftop Image -->
+                <div class="review-card rounded-2xl shadow-lg overflow-hidden fade-in">
+                    <img src="https://image.qwenlm.ai/public_source/6b3ebb31-06bb-4ac5-87c4-f054d417c220/15b86122f-38fb-4a1e-8051-faa225566578.png" alt="Rooftop" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gradient-primary">
+                        <p class="text-white font-bold text-center">Nikmati Makan di Rooftop Kami!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="location" class="py-20 bg-gradient-to-b from-orange-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Lokasi & Jam Buka</h2>
+                <p class="text-gray-600 text-lg">Kunjungi kami di lokasi strategis</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Map -->
+                <div class="fade-in">
+                    <div class="rounded-2xl shadow-2xl overflow-hidden h-96">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.832354156855!2d107.5638211!3d-6.925455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5f992b32359%3A0xa8c1bca9ae2f159a!2sRamen%20Giant%20Cijerah!5e0!3m2!1sid!2sid!4v1773920348881!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                        <!-- UPDATED GOOGLE MAPS LINK -->
+                        <a href="https://maps.app.goo.gl/kozCZkZ7Tq6kUqWV7" target="_blank" class="btn-primary flex-1 px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Buka di Google Maps</span>
+                        </a>
+                        <a href="https://wa.me/6289674529309" class="btn-whatsapp flex-1 px-8 py-4 rounded-full text-white font-bold text-lg inline-flex items-center justify-center space-x-2">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Tanya Lokasi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="fade-in">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                        <h3 class="text-2xl font-bold mb-6 text-gradient">Informasi Lokasi</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Alamat</h4>
+                                    <p class="text-gray-600">Melong, Kota Cimahi, Jawa Barat</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Jam Buka</h4>
+                                    <p class="text-gray-600">Setiap Hari: 12.00 - 22.00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-parking text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Parkir</h4>
+                                    <p class="text-gray-600">Parkir Motor Tersedia, Parkir Mobil di Pinggir Jalan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hours-card rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-gradient">Jam Operasional</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Senin</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Selasa</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Rabu</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Kamis</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Jumat</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-orange-200">
+                                <span class="font-medium">Sabtu</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3">
+                                <span class="font-medium">Minggu</span>
+                                <span class="text-orange-600 font-bold">12.00 - 22.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Hubungi Kami</h2>
+                <p class="text-gray-600 text-lg">Pesan sekarang atau kunjungi kami</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- UPDATED WHATSAPP CTA -->
+                <div class="text-center">
+                    <a href="https://wa.me/6289674529309" class="btn-whatsapp rounded-2xl shadow-xl p-8 text-center text-white fade-in inline-block w-full">
+                        <i class="fab fa-whatsapp text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">📅 Reservasi via WhatsApp</h3>
+                        <p class="opacity-90">Untuk booking meja & makan di tempat</p>
+                    </a>
+                </div>
+
+                <!-- UPDATED GOFOOD CTA -->
+                <div class="text-center">
+                    <a href="https://gofood.co.id" class="btn-gofood rounded-2xl shadow-xl p-8 text-center text-white fade-in inline-block w-full">
+                        <i class="fas fa-motorcycle text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">🛵 Pesan Delivery via GoFood</h3>
+                        <p class="opacity-90">Untuk pesan antar tanpa antri</p>
+                    </a>
+                </div>
+
+                <!-- UPDATED GOOGLE MAPS LINK -->
+                <a href="https://maps.app.goo.gl/kozCZkZ7Tq6kUqWV7" target="_blank" class="gradient-primary rounded-2xl shadow-xl p-8 text-center text-white fade-in">
+                    <i class="fas fa-map-marker-alt text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Kunjungi</h3>
+                    <p class="opacity-90">Lihat di Google Maps</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://image.qwenlm.ai/public_source/6b3ebb31-06bb-4ac5-87c4-f054d417c220/153133813-f8db-4643-bcf7-13c1f92d0ba9.png" alt="Logo" class="h-12 w-12 object-contain bg-white rounded-full p-1">
+                        <div>
+                            <h3 class="text-xl font-bold">Ramen Giant Cijerah</h3>
+                            <p class="text-sm opacity-80">Restoran Ramen Terbaik</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Menu</h4>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#menu" class="hover:text-orange-300" data-category="ramen">Reguler Ramen</a></li>
+                        <li><a href="#menu" class="hover:text-orange-300" data-category="kids">Kids Menu</a></li>
+                        <li><a href="#menu" class="hover:text-orange-300" data-category="bigger">Bigger</a></li>
+                        <li><a href="#menu" class="hover:text-orange-300" data-category="yamien">Special Yamien</a></li>
+                        <li><a href="#menu" class="hover:text-orange-300" data-category="drinks">Minuman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Link Cepat</h4>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#home" class="hover:text-orange-300">Beranda</a></li>
+                        <li><a href="#features" class="hover:text-orange-300">Keunggulan</a></li>
+                        <li><a href="#booking" class="hover:text-orange-300">Reservasi</a></li>
+                        <li><a href="#location" class="hover:text-orange-300">Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 pt-8 text-center opacity-80">
+                <p>&copy; 2024 Ramen Giant Cijerah. All rights reserved.</p>
+                <p class="mt-2 text-sm">Melong, Kota Cimahi, Jawa Barat</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="loading-modal">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Reservasi Sedang Diproses...</h3>
+            <p class="text-gray-600">Anda akan diarahkan ke WhatsApp</p>
+        </div>
+    </div>
+
+    <!-- Floating Order Button with Text -->
+    <a href="https://wa.me/6289674529309" id="floatingBtn" class="floating-btn btn-whatsapp w-16 h-16 rounded-full flex items-center justify-center shadow-2xl relative">
+        <div class="floating-cta-text">
+            <i class="fas fa-calendar mr-1"></i>Reservasi meja!
+        </div>
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="fixed bottom-30 right-30 w-12 h-12 gradient-primary rounded-full flex items-center justify-center shadow-2xl opacity-0 transition-opacity z-1000">
+        <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+    <script>
+        // ==================== DYNAMIC URGENCY TEXT ====================
+        const urgencyTexts = [
+            '⚠️ Jam 19:00–21:00 hampir penuh!',
+            '🔥 3 meja tersisa malam ini',
+            '👥 Sudah 12 orang booking hari ini',
+            '⏰ Reservasi sekarang sebelum kehabisan!',
+            '🎯 Weekend cepat penuh! Booking sekarang'
+        ];
+
+        let urgencyIndex = 0;
+        const urgencyTextElement = document.getElementById('urgencyText');
+        const countdownTextElement = document.getElementById('countdownText');
+
+        function rotateUrgencyText() {
+            urgencyIndex = (urgencyIndex + 1) % urgencyTexts.length;
+            urgencyTextElement.textContent = urgencyTexts[urgencyIndex];
+            
+            // Also update countdown badge
+            if (urgencyIndex % 2 === 0) {
+                countdownTextElement.textContent = urgencyTexts[urgencyIndex];
+            }
+        }
+
+        // Rotate urgency text every 5 seconds
+        setInterval(rotateUrgencyText, 5000);
+
+        // ==================== SOCIAL PROOF NOTIFICATION ====================
+        const socialProofNames = ['Andi', 'Siti', 'Budi', 'Rina', 'Dedi', 'Maya', 'Rudi', 'Lina'];
+        const socialProofActions = ['baru saja melakukan reservasi', 'baru saja booking meja', 'baru saja pesan untuk malam ini'];
+        const socialProofPeople = ['2 orang', '3 orang', '4 orang', '5 orang', 'kelarga'];
+
+        function showSocialProof() {
+            const socialProof = document.getElementById('socialProof');
+            const name = socialProofNames[Math.floor(Math.random() * socialProofNames.length)];
+            const action = socialProofActions[Math.floor(Math.random() * socialProofActions.length)];
+            const people = socialProofPeople[Math.floor(Math.random() * socialProofPeople.length)];
+            
+            document.getElementById('socialProofText').textContent = `${name} ${action} (${people})`;
+            document.getElementById('socialProofTime').textContent = 'Baru saja';
+            
+            socialProof.classList.add('show');
+            
+            setTimeout(() => {
+                socialProof.classList.remove('show');
+            }, 4000);
+        }
+
+        // Show social proof every 15-25 seconds randomly
+        function scheduleSocialProof() {
+            const randomTime = Math.random() * 10000 + 15000;
+            setTimeout(() => {
+                showSocialProof();
+                scheduleSocialProof();
+            }, randomTime);
+        }
+
+        // Start social proof after 10 seconds
+        setTimeout(scheduleSocialProof, 10000);
+
+        // ==================== FLOATING CTA DELAY ====================
+        setTimeout(() => {
+            const floatingBtn = document.getElementById('floatingBtn');
+            floatingBtn.classList.add('visible');
+            setTimeout(() => {
+                floatingBtn.classList.add('animate');
+            }, 500);
+        }, 3000);
+
+        // ==================== CLOSE URGENCY NOTIFICATION ====================
+        function closeUrgencyNotification() {
+            const notification = document.getElementById('urgencyNotification');
+            notification.style.opacity = '0';
+            notification.style.transition = 'opacity 0.3s ease';
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 300);
+            localStorage.setItem('urgencyNotificationClosed', 'true');
+        }
+
+        // Check if notification was already closed
+        window.addEventListener('load', () => {
+            const wasClosed = localStorage.getItem('urgencyNotificationClosed');
+            if (wasClosed === 'true') {
+                document.getElementById('urgencyNotification').classList.add('hidden');
+            }
+        });
+
+        // ==================== MOBILE MENU ====================
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // ==================== MENU TABS ====================
+        const menuTabs = document.querySelectorAll('.menu-tab');
+        const menuContents = document.querySelectorAll('.menu-content');
+
+        menuTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                menuTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                menuContents.forEach(content => content.classList.remove('active'));
+                
+                const category = tab.getAttribute('data-category');
+                document.getElementById(category).classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('[data-category]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = link.getAttribute('data-category');
+                
+                const targetTab = document.querySelector(`.menu-tab[data-category="${category}"]`);
+                if (targetTab) {
+                    targetTab.click();
+                }
+            });
+        });
+
+        // ==================== BOOKING FORM VALIDATION ====================
+        const bookingForm = document.getElementById('bookingForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingModal = document.getElementById('loadingModal');
+
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('bookingDate').setAttribute('min', today);
+
+        function validateForm() {
+            let isValid = true;
+            
+            // Validate Name
+            const name = document.getElementById('bookingName').value.trim();
+            const nameError = document.getElementById('nameError');
+            const nameInput = document.getElementById('bookingName');
+            
+            if (name.length < 3) {
+                nameError.classList.add('show');
+                nameInput.classList.add('error');
+                isValid = false;
+            } else {
+                nameError.classList.remove('show');
+                nameInput.classList.remove('error');
+            }
+            
+            // Validate Date
+            const date = document.getElementById('bookingDate').value;
+            const dateError = document.getElementById('dateError');
+            const dateInput = document.getElementById('bookingDate');
+            
+            if (!date || date < today) {
+                dateError.classList.add('show');
+                dateInput.classList.add('error');
+                isValid = false;
+            } else {
+                dateError.classList.remove('show');
+                dateInput.classList.remove('error');
+            }
+            
+            // Validate Time
+            const time = document.getElementById('bookingTime').value;
+            const timeError = document.getElementById('timeError');
+            const timeInput = document.getElementById('bookingTime');
+            
+            if (!time) {
+                timeError.classList.add('show');
+                timeInput.classList.add('error');
+                isValid = false;
+            } else {
+                timeError.classList.remove('show');
+                timeInput.classList.remove('error');
+            }
+            
+            // Validate People
+            const people = document.getElementById('bookingPeople').value;
+            const peopleError = document.getElementById('peopleError');
+            const peopleInput = document.getElementById('bookingPeople');
+            
+            if (!people) {
+                peopleError.classList.add('show');
+                peopleInput.classList.add('error');
+                isValid = false;
+            } else {
+                peopleError.classList.remove('show');
+                peopleInput.classList.remove('error');
+            }
+            
+            return isValid;
+        }
+
+        // Clear errors on input
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', () => {
+                input.classList.remove('error');
+                const errorElement = document.getElementById(input.id + 'Error');
+                if (errorElement) {
+                    errorElement.classList.remove('show');
+                }
+            });
+        });
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            if (!validateForm()) {
+                // Scroll to first error
+                const firstError = document.querySelector('.form-input.error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return;
+            }
+            
+            // Show loading modal
+            loadingModal.classList.add('active');
+            submitBtn.classList.add('btn-loading');
+            
+            const name = document.getElementById('bookingName').value;
+            const date = document.getElementById('bookingDate').value;
+            const time = document.getElementById('bookingTime').value;
+            const people = document.getElementById('bookingPeople').value;
+            
+            const dateObj = new Date(date);
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = dateObj.toLocaleDateString('id-ID', options);
+            
+            const message = `🍜 *RESERVASI RAMEN GIANT CIJERAH* 🍜%0A%0A` +
+                           `👤 Nama: ${name}%0A` +
+                           `📅 Tanggal: ${formattedDate}%0A` +
+                           `⏰ Jam: ${time}%0A` +
+                           `👥 Jumlah Orang: ${people}%0A%0A` +
+                           `Mohon konfirmasi ketersediaannya. Terima kasih! 🙏`;
+            
+            // Simulate processing delay (2 seconds)
+            setTimeout(() => {
+                const whatsappUrl = `https://wa.me/6289674529309?text=${message}`;
+                window.open(whatsappUrl, '_blank');
+                
+                // Hide loading modal
+                loadingModal.classList.remove('active');
+                submitBtn.classList.remove('btn-loading');
+                
+                // Reset form
+                bookingForm.reset();
+                
+                // Show success message
+                alert('✅ Reservasi berhasil dikirim! Silakan tunggu konfirmasi dari kami.');
+            }, 2000);
+        });
+
+        // ==================== SCROLL TO TOP ====================
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0');
+            } else {
+                scrollTopBtn.classList.add('opacity-0');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ==================== FADE IN ANIMATION ====================
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // ==================== SMOOTH SCROLL ====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ==================== INITIAL FADE IN ====================
+        window.addEventListener('load', () => {
+            const visibleElements = document.querySelectorAll('.fade-in:not(.visible)');
+            visibleElements.forEach((el, index) => {
+                if (index < 6) {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        });
+
+        // ==================== PEAK HOUR DETECTION ====================
+        function updatePeakHourDisplay() {
+            const currentHour = new Date().getHours();
+            const peakHourOptions = document.querySelectorAll('#bookingTime option');
+            
+            peakHourOptions.forEach(option => {
+                if (option.value === '19:00' || option.value === '20:00') {
+                    if (currentHour >= 17 && currentHour <= 21) {
+                        option.classList.add('peak-hour');
+                        option.textContent = option.value.replace(':00', ':00 🔥 Ramai');
+                    }
+                }
+            });
+        }
+
+        updatePeakHourDisplay();
+    </script>
+</body>
+</html>
